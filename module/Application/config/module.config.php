@@ -24,6 +24,16 @@ return [
                     ],
                 ],
             ],
+            'xml' => [
+                'type' => Literal::class,
+                'options' => [
+                    'route'    => '/getXmlData',
+                    'defaults' => [
+                        'controller' => Controller\IndexController::class,
+                        'action'     => 'getXmlData',
+                    ],
+                ],
+            ],
             'application' => [
                 'type'    => Segment::class,
                 'options' => [

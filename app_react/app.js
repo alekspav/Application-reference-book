@@ -1,43 +1,27 @@
-import React, { Component, Fragment } from 'react';
-import { render } from 'react-dom';
-import { asyncComponent } from 'react-async-component';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-/** We are importing our index.php my app Vairaible */
-import myApp from 'myApp';
-
-/* globals __webpack_public_path__ */
-__webpack_public_path__ = `../public/assets/bundle/`;
-
-const Header = asyncComponent({
-    resolve: () => new Promise(resolve =>
-        require.ensure([], require => {
-            resolve(require('./Header'));
-        },
-        'Header')
-    )
-});
-
-class Myapp extends Component {
-    render() {
-
-        const { user : { name, email }, logged } = myApp;
-
-        return (
-            <Fragment>
-                <Header/>
-                <div className="dashboard">
-                    {logged &&
-                        <h2 className="status">Logged In</h2>
-                    }
-                    <h1 className="name"> {name}</h1>
-                    <p className="email">{email}</p>
-
-                    <p>API host variable {__API_HOST__}</p>
-                </div>
-            </Fragment>
-        )
-    }
-}
+import TreeView from './component/tree_view.jsx';
 
 
-render(<Myapp/>, document.getElementById('app'));
+import axios from 'axios';
+
+//Получаем xml с публичного ресурса
+axios.get(`/xml/okpd2.xml`)
+    .then(res => {
+        const data = res.data;
+
+        var parseString = require('xml2js').parseString;
+        parseString(data, function (err, result) {
+            console.log(result);
+        });
+
+
+        React.render(
+            <TreeView data={data} color={"#428bca"} />,
+
+        );
+
+
+    });
+

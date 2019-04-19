@@ -16,4 +16,12 @@ class IndexController extends AbstractActionController
     {
         return new ViewModel();
     }
+
+
+    /**
+     * Получить данные xml
+     */
+    public function getXmlData(){
+        return "";
+    }
 }
