@@ -56,7 +56,7 @@
           <entry key="md" value="7" />
           <entry key="php" value="19" />
           <entry key="phtml" value="7" />
-          <entry key="scss" value="4" />
+          <entry key="scss" value="5" />
           <entry key="xml" value="4" />
           <entry key="yml" value="1" />
         </counts>
@@ -71,7 +71,7 @@
           <entry key="Markdown" value="7" />
           <entry key="PHP" value="26" />
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="SCSS" value="4" />
+          <entry key="SCSS" value="5" />
           <entry key="XML" value="5" />
           <entry key="YAML" value="1" />
         </counts>
@@ -89,6 +89,15 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app_react/css/app.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app_react/app.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -101,10 +110,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module/Application/view/layout/layout.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="594">
               <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
             </state>
           </provider>
@@ -168,6 +177,7 @@
         <option value="$PROJECT_DIR$/app_react/component/tree_node.jsx" />
         <option value="$PROJECT_DIR$/app_react/component/tree_view.jsx" />
         <option value="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" />
+        <option value="$PROJECT_DIR$/app_react/css/app.scss" />
       </list>
     </option>
   </component>
@@ -241,6 +251,12 @@
             <path>
               <item name="xml.test" type="b2602c69:ProjectViewProjectNode" />
               <item name="xml.test" type="462c0819:PsiDirectoryNode" />
+              <item name="app_react" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xml.test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xml.test" type="462c0819:PsiDirectoryNode" />
               <item name="module" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -300,7 +316,7 @@
       <workItem from="1555597553092" duration="3377000" />
       <workItem from="1555653167058" duration="5014000" />
       <workItem from="1555658226247" duration="15040000" />
-      <workItem from="1555912615830" duration="5426000" />
+      <workItem from="1555912615830" duration="5962000" />
     </task>
     <task id="LOCAL-00001" summary="Первый коммит после загрузки связки React+ZD">
       <created>1555598392113</created>
@@ -341,7 +357,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28857000" />
+    <option name="totallyTimeSpent" value="29393000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -360,7 +376,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.39666668" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.39666668" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -480,7 +496,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/bundle/main.bundle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-86337" />
+        <state relative-caret-position="-86337">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
@@ -529,9 +549,6 @@
     <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_react/css/app.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -570,16 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_react/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/xml/okpd2.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-170200">
@@ -596,8 +603,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Application/view/layout/layout.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="594">
           <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_react/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_react/css/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
