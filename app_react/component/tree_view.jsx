@@ -12,12 +12,12 @@ export default class TreeView extends Component {
 
         if (catalog) {
             var _this = this;
-            for (var i = 0; i < 20; i++) {
+            for (var i = 0; i < 100; i++) {
                 var node = catalog.array[i];
                 children.push(<li className='list-group-item'
                                   key={node.global_id}
                 >
-                    {node.Name}
+                    {node.Name}({node.Nomdescr})
                 </li>);
 
             }
