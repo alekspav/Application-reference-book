@@ -3,21 +3,16 @@ import TreeNode from './tree_node.jsx';
 
 
 export default class TreeView extends Component {
-
-    constructor(props) {
-        super(props);
-    }
-
-    handleEvent = () => {
-        console.log(this.props);
-    }
-
     render() {
+        //Получаем данные
+        const  data = this.props.data;
 
         var children = [];
-        if (data) {
+        var catalog = data.catalog;
+
+        if (catalog) {
             var _this = this;
-            data.forEach(function (node) {
+            catalog.forEach(function (node) {
                 children.push(<TreeNode node={node}
                                         level={1}
                                         visible={true}
@@ -26,12 +21,12 @@ export default class TreeView extends Component {
         }
 
 
-        return (
+        return "";/*(
             <div id='treeview' className='treeview'>
                 <ul className='list-group'>
                     {children}
                 </ul>
             </div>
-        );
+        );*/
     }
 }

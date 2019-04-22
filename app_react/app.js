@@ -1,10 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import axios from 'axios';
 import TreeView from './component/tree_view.jsx';
 
-
-import axios from 'axios';
 
 //Получаем xml с публичного ресурса
 axios.get(`/xml/okpd2.xml`)
@@ -16,12 +14,8 @@ axios.get(`/xml/okpd2.xml`)
             console.log(result);
         });
 
-
-        React.render(
-            <TreeView data={data} color={"#428bca"} />,
-
-        );
-
+        // Дерево
+        ReactDOM.render(<TreeView data={data} color={"#428bca"} />, document.getElementById("app"));
 
     });
 
