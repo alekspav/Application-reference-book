@@ -10,4 +10,7 @@ Webpack настраивается в файле webpack.config.js, список
 
 ## Разработка React с автоматической компиляцией
 `npm run-script watch`
+
+## В React
+Разбор XML документа
  
