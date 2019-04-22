@@ -11,11 +11,9 @@ axios.get(`/xml/okpd2.xml`)
 
         var parseString = require('xml2js').parseString;
         parseString(data, function (err, result) {
-            console.log(result);
+            // Дерево
+            ReactDOM.render(<TreeView data={result} color={"#428bca"} />, document.getElementById("app"));
         });
-
-        // Дерево
-        ReactDOM.render(<TreeView data={data} color={"#428bca"} />, document.getElementById("app"));
 
     });
 
