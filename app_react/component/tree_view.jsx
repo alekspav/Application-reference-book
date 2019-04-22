@@ -8,7 +8,7 @@ export default class TreeView extends Component {
 
         var children = [];
 
-        //Массив каталогоы
+        //Массив каталогов
         var catalog = data.catalog;
 
         if (catalog) {
